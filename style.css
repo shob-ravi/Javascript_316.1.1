@@ -1,0 +1,47 @@
+ *{
+  box-sizing: border-box;
+} 
+
+:root {
+    --main-bg: gray;
+    --top-menu-bg:rgb(5, 100, 159); 
+    --sub-menu-bg:blue;   
+  }
+  main{
+    /* background-color: var(--main-bg); */
+    /* border:solid black; */
+    height:100%;
+  }
+  h1{
+    color:white;
+  }
+  body{
+    height:100vh; 
+    margin:0;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display:grid;
+    grid-template-rows: 3rem auto; 
+  }
+  .flex-ctr{
+    /* border:solid green; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:100%;    
+  }
+
+.flex-around{
+/* border:solid yellow; */
+display:flex;
+justify-content: space-around;
+align-items: center;
+}
+nav a{
+  line-height: 3rem;  
+  padding: 0 1rem;
+  color: white;
+  text-transform: uppercase;
+}
+#top-menu a:hover {
+  background-color: var(--sub-menu-bg);
+}
